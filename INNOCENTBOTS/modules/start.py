@@ -6,7 +6,7 @@ from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 START_BUTTON = [
     [
         Button.url(" 𝐌ᴜsɪᴄ ", "https://t.me/RUHI_X_MUSICBOT"),
-        Button.url("𝐎ᴡɴᴇʀ", "https://t.me/its_innnocent_boy_8202")
+        Button.url("𝐎ᴡɴᴇʀ", "https://t.me/its_innocent_boy_8202")
     ],
     [
         Button.url(" 𝐂н𝙰𝙽𝙽𝙴𝙻 ", "https://t.me/THE_FUCKING_BOT_2926"),
