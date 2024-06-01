@@ -32,7 +32,7 @@ async def echo(event):
             elif user_id == OWNER_ID:
                 await event.reply("KYA BE APNE BAAP KO GALI DEGA ISLIYE PEDA KIYA TEREKO. 🌿✨.")
             elif user_id in SUDO_USERS:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ🤒.")
+                await event.reply("ISKO GALI DEGA JISNE TERI GAAND MAARI. 💥⚡")
             else:
                 try:
                     alt = Get(base64.b64decode('QFRoZUFsdHJvbg=='))
@@ -43,10 +43,10 @@ async def echo(event):
                 global ECHO
                 check = f"{user_id}_{event.chat_id}"
                 if check in ECHO:
-                    await event.reply("» ᴇᴄʜᴏ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴏɴ ᴛʜɪꜱ ᴜꜱᴇʀ !!")
+                    await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓟𝓐𝓗𝓛𝓔 𝓢𝓔 𝓗𝓘 𝓒𝓗𝓐𝓛𝓤 𝓗𝓐𝓘 𝓜𝓐𝓢𝓣𝓔𝓡🤦‍♂️🤷‍♂️ !!")
                 else:
                     ECHO.append(check)
-                    await event.reply("» ᴇᴄʜᴏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ ✅")
+                    await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓒𝓗𝓐𝓛𝓤 𝓗𝓞 𝓖𝓨𝓐 𝓜𝓐𝓢𝓣𝓔𝓡 ✅")
         else:
             await event.reply(f"𝗘𝗰𝗵𝗼:\n  » {hl}echo <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -76,9 +76,9 @@ async def rmecho(event):
 
             if check in ECHO:
                 ECHO.remove(check)
-                await event.reply("» ᴇᴄʜᴏ ʜᴀꜱ ʙᴇᴇɴ ꜱᴛᴏᴘᴘᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴜꜱᴇʀ !! ☑️")
+                await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓟𝓐𝓗𝓛𝓔 𝓢𝓔 𝓗𝓘 𝓑𝓐𝓝𝓓 𝓗𝓐𝓘 𝓜𝓐𝓢𝓣𝓔𝓡🤦‍♂️🤷‍♂️ !! ☑️")
             else:
-                await event.reply("» ᴇᴄʜᴏ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴅɪꜱᴀʙʟᴇᴅ !!")
+                await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓑𝓐𝓝𝓓 𝓗𝓞 𝓖𝓨𝓐 𝓜𝓐𝓢𝓣𝓔𝓡 ✅")
         else:
             await event.reply(f"𝗥𝗲𝗺𝗼𝘃𝗲 𝗘𝗰𝗵𝗼:\n  » {hl}rmecho <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
