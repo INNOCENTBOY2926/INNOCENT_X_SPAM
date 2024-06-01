@@ -3,7 +3,7 @@ import logging
 from telethon import TelegramClient
 
 from os import getenv
-from INNOCENTBOTS.data import OXYGEN
+from INNOCENTBOTS.data import Innotron
 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
@@ -28,7 +28,7 @@ BOT_TOKEN9 = getenv("BOT_TOKEN9", default=None)
 BOT_TOKEN10 = getenv("BOT_TOKEN10", default=None)
 
 SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", default="7187959019").split()))
-for x in OXYGEN:
+for x in Innotron:
     SUDO_USERS.append(x)
 OWNER_ID = int(getenv("OWNER_ID", default="6961211249"))
 SUDO_USERS.append(OWNER_ID)
