@@ -28,9 +28,9 @@ async def echo(event):
             user_id = reply_msg.sender_id
 
             if user_id in OXYGEN:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ🙏.")
+                await event.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨.")
             elif user_id == OWNER_ID:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ😎.")
+                await event.reply("KYA BE APNE BAAP KO GALI DEGA ISLIYE PEDA KIYA TEREKO. 🌿✨.")
             elif user_id in SUDO_USERS:
                 await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ🤒.")
             else:
