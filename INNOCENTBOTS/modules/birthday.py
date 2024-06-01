@@ -30,11 +30,11 @@ async def hraid(e):
 
         try:
             if uid in Innotron:
-                await e.reply("ɴᴏᴘᴇ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀᴜᴛʜᴏʀ ʙᴏᴛ ᴏᴡɴᴇʀ🍷 ")
+                await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ ")
             elif uid == OWNER_ID:
-                await e.reply("ɴᴏᴘᴇ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ 🤖")
+                await e.reply("KYA BE APNE BAAP KO GALI DEGA ISLIYE PEDA KIYA TEREKO. 🌿✨")
             elif uid in SUDO_USERS:
-                await e.reply("ɴᴏᴘᴇ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ꜱᴜᴅᴏ ᴜꜱᴇʀ 🫂")
+                await e.reply("ISKO GALI DEGA JISNE TERI GAAND MAARI. 💥⚡.")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
