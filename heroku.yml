@@ -1,0 +1,5 @@
+build:
+  docker:
+    INNOCENT: Dockerfile
+run:
+  INNOCENT: python3 -m main.py
