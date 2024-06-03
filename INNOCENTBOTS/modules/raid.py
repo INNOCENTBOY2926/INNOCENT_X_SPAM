@@ -34,7 +34,7 @@ async def raid(e):
             uid = entity.id
 
         try:
-            if uid in ALTRON:
+            if uid in Innotron:
                 await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ .")
             elif uid == OWNER_ID:
                 await e.reply("KYA BE APNE BAAP KO GALI DEGA ISLIYE PEDA KIYA TEREKO. 🌿✨ ")
@@ -99,7 +99,7 @@ async def rraid(e):
 
         try:
             user_id = entity.id
-            if user_id in ALTRON:
+            if user_id in Innotron:
                 await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ ")
             elif user_id == OWNER_ID:
                 await e.reply("KYA BE APNE BAAP KO GALI DEGA ISLIYE PEDA KIYA TEREKO. 🌿✨ .")
@@ -245,7 +245,7 @@ async def craid(e):
             uid = entity.id
 
         try:
-            if uid in ALTRON:
+            if uid in Innotron:
                 await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ ")
             elif uid == OWNER_ID:
                 await e.reply("KYA BE APNE BAAP KO GALI DEGA ISLIYE PEDA KIYA TEREKO. 🌿✨")
