@@ -5,7 +5,7 @@ from random import choice
 from telethon import events
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from INNOCENTBOTS.data import RAID, REPLYRAID, Innotron, MRAID, SRAID, CRAID, Innotron
+from INNOCENTBOTS.data import RAID, REPLYRAID, Innotron, SRAID, CRAID, Innotron
 
 REPLY_RAID = []
 
@@ -143,44 +143,6 @@ async def drraid(e):
             await e.reply("» ᴛʜɪᴋ ʜᴀɪ ᴍᴀғ ᴋᴀʀ ʀʜᴇ ʜᴀɪ !! ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
-
-
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-async def mraid(e):
-    if e.sender_id in SUDO_USERS:
-        xraid = e.text.split(" ", 2)
-
-        if len(xraid) == 3:
-            entity = await e.client.get_entity(xraid[2])
-            uid = entity.id
-
-        elif e.reply_to_msg_id:             
-            a = await e.get_reply_message()
-            entity = await e.client.get_entity(a.sender_id)
-            uid = entity.id
-
-        try:
-            first_name = entity.first_name
-            counter = int(xraid[1])
-            username = f"[{first_name}](tg://user?id={uid})"
-            for _ in range(counter):
-                reply = choice(MRAID)
-                caption = f"{username} {reply}"
-                await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.001)
-        except (IndexError, ValueError, NameError):
-            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗠𝗥𝗮𝗶𝗱\n  » {hl}mraid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}mraid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
-        except Exception as e:
-            print(e)
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
