@@ -5,7 +5,7 @@ from random import choice
 from telethon import events
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from AltBots.data import RAID, REPLYRAID, ALTRON, MRAID, SRAID, CRAID, ALTRON
+from INNOCENTBOTS.data import RAID, REPLYRAID, Innotron, MRAID, SRAID, CRAID, Innotron
 
 REPLY_RAID = []
 
