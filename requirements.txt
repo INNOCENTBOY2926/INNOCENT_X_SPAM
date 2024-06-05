@@ -1,5 +1,3 @@
 telethon
 cryptg
 heroku3
-pip3 install -U pip
-pip install -U pip
